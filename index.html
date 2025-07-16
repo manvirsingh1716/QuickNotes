@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QuickNote</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      color: #0f0;
+      font-family: Consolas, monospace;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #editor {
+      flex: 1;
+      padding: 20px;
+      border: none;
+      outline: none;
+      background: #000;
+      color: #0f0;
+      resize: none;
+      font-size: 16px;
+      line-height: 1.5;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <textarea id="editor" placeholder="Start typing..." autofocus></textarea>
+  <script src="renderer.js"></script>
+</body>
+</html>
